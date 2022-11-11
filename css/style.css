@@ -2,6 +2,8 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
+    padding: 0;
+    margin: 0;
 }
 header {
 
@@ -18,6 +20,12 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center right;
+}
+#navbar {
+}
+nav {
+  position: fixed;
+  top: 0;
 }
 .language-block {
     margin: 0px 4px;
@@ -116,3 +124,13 @@ header {
     .table-wrapper .hide {
       display: none;
     }
+    /* start footer style */
+    .footer {
+      background-color: #ddf7ea;
+      margin-top: 120px;
+    }
+
+    .contact-us-link {
+      text-decoration: none;
+    }
+    /* end footer style */
