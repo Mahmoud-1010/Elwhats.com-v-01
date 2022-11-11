@@ -1,0 +1,118 @@
+body {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+header {
+
+}
+.header-bg {
+    background: url('../images/hero-bg.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+}
+.language-block {
+    margin: 0px 4px;
+    width: 25px;
+    height: 25px;
+}
+.flag {
+    width: 100%;
+    height: 100%;
+    border: 2px;
+    border-radius: 50%;
+}
+.content-section {
+    padding: 130px 0px 30px 0px;
+}
+.sec-btn {
+    text-decoration: none;
+    color: #0C39F8 !important;
+    margin-top: 50px;
+}
+.pricing-section {
+    padding: 120px 0;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  /*CUSTOM VARIABLES HERE*/
+   
+  .switch-wrapper {
+      position: relative;
+      display: inline-flex;
+      padding: 4px;
+      border: 1px solid lightgrey;
+      margin-bottom: 40px;
+      border-radius: 30px;
+      background: #fff;
+    }
+     
+    .switch-wrapper [type="radio"] {
+      position: absolute;
+      left: -9999px;
+    }
+     
+    .switch-wrapper [type="radio"]:checked#monthly ~ label[for="monthly"],
+    .switch-wrapper [type="radio"]:checked#yearly ~ label[for="yearly"] {
+      color: var(--white);
+    }
+     
+    .switch-wrapper [type="radio"]:checked#monthly ~ label[for="monthly"]:hover,
+    .switch-wrapper [type="radio"]:checked#yearly ~ label[for="yearly"]:hover {
+      background: transparent;
+    }
+     
+    .switch-wrapper
+      [type="radio"]:checked#monthly
+      + label[for="yearly"]
+      ~ .highlighter {
+      transform: none;
+    }
+     
+    .switch-wrapper
+      [type="radio"]:checked#yearly
+      + label[for="monthly"]
+      ~ .highlighter {
+      transform: translateX(100%);
+    }
+     
+    .switch-wrapper label {
+      font-size: 16px;
+      z-index: 1;
+      min-width: 100px;
+      line-height: 32px;
+      cursor: pointer;
+      border-radius: 30px;
+      transition: color 0.25s ease-in-out;
+    }
+     
+    .switch-wrapper label:hover {
+      background: #fff;
+    }
+     
+    .switch-wrapper .highlighter {
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      width: calc(50% - 4px);
+      height: calc(100% - 8px);
+      border-radius: 30px;
+      background: blue;
+      transition: transform 0.25s ease-in-out;
+    }
+    .table-wrapper .hide {
+      display: none;
+    }
